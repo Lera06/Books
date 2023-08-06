@@ -54,11 +54,14 @@ INSTALLED_APPS = [
     'crispy_bootstrap4',
     'allauth',
     'allauth.account',
+    'social_django',
+
 ]
 
 # django-allauth config
 SITE_ID = 1
 AUTHENTICATION_BACKENDS = (
+    'social_core.backends.github.GithubOAuth2',
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 )
@@ -70,6 +73,11 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+
+# Github
+SOCIAL_AUTH_GITHUB_KEY = env('SOCIAL_AUTH_GITHUB_KEY')
+SOCIAL_AUTH_GITHUB_SECRET = env('SOCIAL_AUTH_GITHUB_SECRET')
+SOCIAL_AUTH_GITHUB_SCOPE = ['user:email', 'read:user']
 
 # custom user model
 AUTH_USER_MODEL = 'accounts.CustomUser'

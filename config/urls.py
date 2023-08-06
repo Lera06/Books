@@ -27,4 +27,7 @@ urlpatterns = [
     # Local apps
     # path('accounts/', include('accounts.urls')),
     path('', include('pages.urls')),
+
+    path('', include('social_django.urls', namespace='social'))
+
 ]

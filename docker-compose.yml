@@ -12,6 +12,8 @@ services:
     environment:
       - "DJANGO_SECRET_KEY=django-insecure-94!@xyjzw#$$jdu4m4p@v9#gnk&m(en=*w*773$$w$@t_!()a$$es"
       - "DJANGO_DEBUG=True"
+      - "SOCIAL_AUTH_GITHUB_KEY=7da4cb5692bfb892d919"
+      - "SOCIAL_AUTH_GITHUB_SECRET=042629f277b29fc8267178e1f762691e700e87c7"
   db:
     image: postgres
     environment:

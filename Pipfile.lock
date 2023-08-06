@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d0b3d7c46f2e6941f37f4dd3f2ffc4de6bfa2d4643f1efa9fdede26e9beb7ffb"
+            "sha256": "775751fd3f636f2220c84d927afe1b056cab2b2cd1129485cad46097a7b30028"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -427,6 +427,22 @@
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==1.3.1"
+        },
+        "social-auth-app-django": {
+            "hashes": [
+                "sha256:0347ca4cd23ea9d15a665da9d22950552fb66b95600e6c2ebae38ca883b3a4ed",
+                "sha256:4a5dae406f3874b4003708ff120c02cb1a4c8eeead56cd163646347309fcd0f8"
+            ],
+            "index": "pypi",
+            "version": "==5.2.0"
+        },
+        "social-auth-core": {
+            "hashes": [
+                "sha256:9791d7c7aee2ac8517fe7a2ea2f942a8a5492b3a4ccb44a9b0dacc87d182f2aa",
+                "sha256:ea7a19c46b791b767e95f467881b53c5fd0d1efb40048d9ed3dbc46daa05c954"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==4.4.2"
         },
         "sqlparse": {
             "hashes": [
