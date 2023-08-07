@@ -14,6 +14,8 @@ services:
       - "DJANGO_DEBUG=True"
       - "SOCIAL_AUTH_GITHUB_KEY=7da4cb5692bfb892d919"
       - "SOCIAL_AUTH_GITHUB_SECRET=042629f277b29fc8267178e1f762691e700e87c7"
+      - "EMAIL_HOST_USER=valeriyamekhonina@gmail.com"
+      - "EMAIL_HOST_PASSWORD=ayfmbgdwqttjfztr"
   db:
     image: postgres
     environment:
