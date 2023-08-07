@@ -11,6 +11,7 @@ django-crispy-forms = "*"
 crispy-bootstrap4 = "*"
 django-allauth = "*"
 social-auth-app-django = "*"
+pillow = "*"
 
 [dev-packages]
 
